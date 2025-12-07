@@ -37,6 +37,15 @@ for i, element in enumerate(elements):
     text = driver.execute_script("return arguments[0].textContent;", element).replace("\n", "")
     print(str(i)+":"+text)
 
+driver.execute_script("""
+    // 全要素にinputイベントを発火（Reactが変更を認識）
+    document.querySelectorAll('[contenteditable="true"]').forEach(el => {
+        const inputEvent = new Event('input', { bubbles: true, cancelable: true });
+        inputEvent.inputType = 'insertText';
+        el.dispatchEvent(inputEvent);
+    });
+""")
+
 search_save_button_string='//button[@class="components-button editor-post-publish-button editor-post-publish-button__button is-primary is-compact"]'
 element_number=1
 press_something_block_xpath(driver, search_save_button_string, element_number)
