@@ -49,6 +49,30 @@ with open(project_root_path+"/translate/article_sentences_folder/"+latest_articl
         driver.close()
         
         driver.switch_to.window(edit_article_window)
+    
+    
+    
+    
+    
+    # test = list(sentences)
+    # result = driver.execute_script("""
+    #                       translated_sentences = "";
+    #                       window.location.href = 'https://translate.google.com/?sl=ja&tl=en&text=' + arguments[0][0] + "&op=translate";
+                          
+    #                       for(let i=0; i<arguments[0].length; i++){
+    #                           console.log(i+":"+arguments[0][i]);
+    #                       }
+                          
+    #                       divs = document.querySelector('div.lRu31');
+    #                       return divs.textContent.trim();
+    #                       """
+    #                       , test)
+    # print(result)
+    # input()
+    
+    
+    
+    
 
 with open(project_root_path+"/translate/translated_sentences_folder/translated_sentence"+now+".txt", "w", encoding="utf-8") as f:
     f.write(translated_sentences)
