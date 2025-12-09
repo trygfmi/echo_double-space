@@ -1,0 +1,12 @@
+MacPorts
+WSL2
+MSYS2 MINGW64
+Advance confirmation
+preinstall
+command
+Advance confirmation
+preinstall
+command
+Advance confirmation
+preinstall
+command

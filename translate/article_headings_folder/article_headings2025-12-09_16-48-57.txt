@@ -1,0 +1,12 @@
+MacPorts
+WSL2
+MSYS2 MINGW64
+事前確認
+preinstall
+コマンド
+事前確認
+preinstall
+コマンド
+事前確認
+preinstall
+コマンド
