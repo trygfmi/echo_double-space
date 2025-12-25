@@ -26,7 +26,7 @@
 
 
 <div class="wp-block-group">
-<p>上記のコマンドをインストール済みの方は、以下のコマンドを実行してリポジトリからダウンロード後、ディレクトリを移動し、echoコマンドを実行して引用符で囲まれている場合とそうでない場合のコードを実行して出力してみてください</p>
+<p>echoコマンドを実行して引用符で囲まれている場合とそうでない場合のコードを実行して出力してみてください</p>
 
 
 
@@ -386,7 +386,3 @@ hello world.txt</code></pre>
 
 
 <pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>cat "$hello"</code></pre>
-
-
-
-<p></p>
